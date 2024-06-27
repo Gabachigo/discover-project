@@ -14,7 +14,7 @@
 
 .light {
   --text-color: black;
-  --bg-img: url(Media/bg-mobile-light.jpg);
+  --bg-img: url(Media/bg-mobile.jpg);
   --back-color: rgba(0, 0, 0, 0.05);
   --back-color-hover: rgba(0, 0, 0, 0.02);
   --border-color: rgba(0, 0, 0, 0.5);
@@ -33,6 +33,8 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  height: 100vh;
 }
 
 body * {
@@ -188,4 +190,16 @@ ion-icon {
 footer {
   text-align: center;
   padding: 24px 0;
+}
+
+/* media queries */
+
+@media ( min-width:700px ) {
+  :root {
+    --bg-img: url(Media/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-img: url(Media/bg-desktop-light.jpg);
+  }
 }
