@@ -44,7 +44,8 @@ body * {
 /* main container settings */
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   height: 712px;
   padding: 0px 24px;
   
